@@ -2,13 +2,9 @@
 
 This repository contains the project for a fictional real estate website that sells lots from [The Sims 4](https://www.ea.com/games/the-sims/the-sims-4).
 
----
-
 ## Author:
 
 - 🦖 [Laira Almas](https://github.com/lairaalmas)
-
----
 
 ## Technologies
 
@@ -17,8 +13,6 @@ This repository contains the project for a fictional real estate website that se
 - bootstrap
 - scss
 - gulp
-
----
 
 ## Usefull links:
 
