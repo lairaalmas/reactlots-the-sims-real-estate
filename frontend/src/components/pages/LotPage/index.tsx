@@ -1,8 +1,7 @@
 import { useLoaderData } from "react-router-dom";
-// import LotCards from "../../components/LotCards";
 import { ILot } from "../../../utils/data-types";
 
-const Lot: React.FC = () => {
+const LotPage: React.FC = () => {
   const data = useLoaderData() as ILot;
 
   let content = <p>"..."</p>;
@@ -43,4 +42,4 @@ const Lot: React.FC = () => {
   );
 };
 
-export default Lot;
+export default LotPage;

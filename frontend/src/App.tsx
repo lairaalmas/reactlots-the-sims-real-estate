@@ -7,16 +7,16 @@ import {
 
 import RootLayout from "./components/layouts/RootLayout";
 import PageContentLayout from "./components/layouts/PageContentLayout";
-import Error from "./components/pages/Error";
+import Error from "./components/pages/ErrorPage";
 
 import { loadFilteredLots } from "./utils/loaders";
 
 import "./styles/css/custom.min.css";
 import "./styles/css/App.min.css";
 
-const ContactPage = lazy(() => import("./components/pages/Contact"));
-const AboutPage = lazy(() => import("./components/pages/About"));
-const LotPage = lazy(() => import("./components/pages/Lot"));
+const ContactPage = lazy(() => import("./components/pages/ContactPage"));
+const AboutPage = lazy(() => import("./components/pages/AboutPage"));
+const LotPage = lazy(() => import("./components/pages/LotPage"));
 
 const router = createBrowserRouter([
   {

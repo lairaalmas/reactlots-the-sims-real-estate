@@ -1,6 +1,6 @@
 import mapSrc from "../../../assets/map_os.png";
 
-const Contact: React.FC = () => {
+const ContactPage: React.FC = () => {
   return (
     <>
       <h2 className="text-center my-5">Interested in buying a lot?</h2>
@@ -38,4 +38,4 @@ const Contact: React.FC = () => {
   );
 };
 
-export default Contact;
+export default ContactPage;

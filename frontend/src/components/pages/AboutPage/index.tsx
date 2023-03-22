@@ -1,4 +1,4 @@
-const About: React.FC = () => {
+const AboutPage: React.FC = () => {
   return (
     <div className="container">
       <h2 className="text-center my-5">About us</h2>
@@ -10,4 +10,4 @@ const About: React.FC = () => {
   );
 };
 
-export default About;
+export default AboutPage;

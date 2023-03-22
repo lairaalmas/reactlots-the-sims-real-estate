@@ -7,7 +7,7 @@ import Banner from "../../ui/Banner";
 
 import DataContext from "../../../contexts/data-context";
 
-const Home: React.FC = () => {
+const HomePage: React.FC = () => {
   console.log("-- -- -- -- Page: home");
   const navigation = useNavigation();
   const ctx = useContext(DataContext);
@@ -28,4 +28,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default HomePage;
