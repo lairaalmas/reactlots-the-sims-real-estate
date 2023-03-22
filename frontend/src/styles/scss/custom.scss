@@ -1,0 +1,13 @@
+// Include any default variable overrides here (though functions won't be available)
+// scss-docs-start theme-color-variables
+
+// Change $variables
+
+$primary: #4276b7;
+$secondary: #7690b3;
+$success: #199c2c;
+$info: #308be9;
+
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here

@@ -1,0 +1,15 @@
+.Button {
+  border: none;
+  border-radius: 50%;
+  padding: 1rem 1rem;
+  background-color: #fff;
+  color: var(--sims-color-blue);
+
+  i {
+    font-size: 2rem;
+  }
+
+  &:hover {
+    color: var(--sims-color-green);
+  }
+}

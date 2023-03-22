@@ -1,0 +1,17 @@
+.Footer {
+  color: white;
+
+  * {
+    font-family: sans-serif;
+  }
+  div a {
+    text-decoration: none;
+  }
+
+  background: rgb(47, 112, 198);
+  background: linear-gradient(
+    153deg,
+    rgba(47, 112, 198, 1) 7%,
+    rgba(110, 224, 159, 1) 100%
+  );
+}

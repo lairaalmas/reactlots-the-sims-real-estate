@@ -1,0 +1,16 @@
+.Filter {
+  position: relative;
+  margin-bottom: 7rem;
+
+  label {
+    color: #fff;
+  }
+
+  &__button__container {
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}

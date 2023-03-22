@@ -1,0 +1,42 @@
+.CardList {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-gap: 1rem;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+
+    &__item {
+      border: 2px solid #ddd;
+      border-radius: 1rem;
+      margin-bottom: 1rem;
+
+      header,
+      a,
+      img {
+        border-top-left-radius: inherit;
+        border-top-right-radius: inherit;
+      }
+
+      a {
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+        &:hover {
+          img {
+            opacity: 1;
+          }
+        }
+        img {
+          flex-shrink: 0;
+          min-width: 100%;
+          min-height: 100%;
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+}
