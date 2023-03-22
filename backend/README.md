@@ -1,6 +1,23 @@
-# Back end
+# Backend
 
 ...
+
+## Author:
+
+- 🦖 [Laira Almas](https://github.com/lairaalmas)
+
+## Technologies
+
+- nodejs
+- expressjs
+- typescript
+- dotenv
+- nodemon
+- concurrently
+
+# Usefull links / references:
+
+- [How to setup TypeScript with Node.js and Express](https://blog.logrocket.com/how-to-set-up-node-typescript-express/)
 
 ## Available scripts
 
@@ -22,10 +39,6 @@
 
 - `http://localhost:8080/search?q=:query`
   - ...
-
-## References:
-
-- [How to setup TypeScript with Node.js and Express](https://blog.logrocket.com/how-to-set-up-node-typescript-express/)
 
 ## Some key steps
 
