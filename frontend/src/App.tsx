@@ -1,17 +1,22 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Suspense, lazy } from "react";
+import {
+  createBrowserRouter,
+  LoaderFunctionArgs,
+  RouterProvider,
+} from "react-router-dom";
 
 import RootLayout from "./components/layouts/RootLayout";
 import PageContentLayout from "./components/layouts/PageContentLayout";
-
-import Contact from "./components/pages/Contact";
-import About from "./components/pages/About";
 import Error from "./components/pages/Error";
 
-import { loadFilteredLots, loadLot } from "./utils/loaders";
-import Lot from "./components/pages/Lot";
+import { loadFilteredLots } from "./utils/loaders";
 
 import "./styles/css/custom.min.css";
 import "./styles/css/App.min.css";
+
+const ContactPage = lazy(() => import("./components/pages/Contact"));
+const AboutPage = lazy(() => import("./components/pages/About"));
+const LotPage = lazy(() => import("./components/pages/Lot"));
 
 const router = createBrowserRouter([
   {
@@ -24,9 +29,32 @@ const router = createBrowserRouter([
         errorElement: <Error />,
         loader: loadFilteredLots,
       },
-      { path: "lots/:id", element: <Lot />, loader: loadLot },
-      { path: "contact", element: <Contact /> },
-      { path: "about", element: <About /> },
+      {
+        path: "contact",
+        element: (
+          <Suspense fallback={<p>Loading...</p>}>
+            <ContactPage />
+          </Suspense>
+        ),
+      },
+      {
+        path: "about",
+        element: (
+          <Suspense fallback={<p>Loading...</p>}>
+            <AboutPage />
+          </Suspense>
+        ),
+      },
+      {
+        path: "lots/:id",
+        element: (
+          <Suspense fallback={<p>Loading...</p>}>
+            <LotPage />
+          </Suspense>
+        ),
+        loader: (args: LoaderFunctionArgs) =>
+          import("./utils/loaders").then((module) => module.loadLot(args)),
+      },
     ],
   },
 ]);
